@@ -1,25 +1,97 @@
 /*DESKTOP FIRST*/
 
 /*Extralarge devices (xl) & General*/
-html{}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+    /* font-family: 'Nunito Sans', sans-serif; */
+}
 body{
-    font-family: 'Nunito';
+    font-family: 'Nunito', sans-serif;
     font-size: 22;
+}
+h1{
+    font-family: 'Concert One', cursive; 
+    font-size: 4rem;
+}
+.bg-red{
+    background-color: #F01F1F;
+}
+.sec-colour-light{
+ color: #07D3C7;
 }
 
 .header{
-    background: linear-gradient(to bottom right, #1E038A, #07D3C7);
+    background: rgb(21,0,107);
+    background: -moz-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#15006b",endColorstr="#00d4ff",GradientType=1);
+}
+.navbar{
+    border-bottom: 3px solid #07D3C7;
+}
+.navbar::before{
+    content: "";
+    border-bottom: 3px solid #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 4px;
+    pointer-events: none;
+}
+.navbar-brand{
+    background-color: #15006b;
+    padding: .3rem .7rem;
+    margin-left: 5rem !important;
+    margin-bottom: -1rem;
+    z-index: 10;
+}
+.logo-bg{
+    background-color: #fff;
+}
+.logo-bg img{
+    margin-top: -.2rem;
+    margin-bottom: -.2rem;
 }
 .nav-link{
     color: #fff !important;
     font-weight: 600;
 }
-.nav-lines{
-    height: 15rem;
-    color: red;
-}
+
 .home{
-    height: 30rem;
+    height: 33rem;
+    color:#fff;
+}
+.home-text{
+    margin: auto 0;
+}
+.intro{
+    white-space: nowrap;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+}
+.slant-r{
+    border-radius: .5rem;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+}
+.slant-r >*{
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+}
+.vector-div{
+    margin-top:1rem;
+    margin-left: 3rem;
+    position: relative;
+}
+.vectors{
+    position: absolute;
 }
 
 @media(max-width: 1200px){
