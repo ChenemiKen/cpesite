@@ -1,27 +1,56 @@
 /*DESKTOP FIRST*/
+:root {
+    --blue: #1E038A;
+    --white: #faf0e6;
+    --sec_light: #07D3C7;
+    --sec_dark: #13B1D8;
+    --red: #F01F1F;
+  }
 
 /*Extralarge devices (xl) & General*/
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    height: 100%;
 
     /* font-family: 'Nunito Sans', sans-serif; */
 }
 body{
     font-family: 'Nunito', sans-serif;
     font-size: 22;
+    color:darkslategrey;
 }
 h1{
     font-family: 'Concert One', cursive; 
     font-size: 4rem;
 }
+h2,h3,h4{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.fa-2x{
+    font-size: 1.5rem;
+}
 .bg-red{
-    background-color: #F01F1F;
+    background-color: var(--red);
 }
 .sec-colour-light{
- color: #07D3C7;
+ color: var(--sec_light) !important;
 }
-
+.sec-col-dark{
+    color: var(--sec_dark) !important;
+}
+.text-blue{
+    color:var(--blue) !important;
+}
+.text-red{
+    color: rgb(255, 1, 1) !important;
+}
+.page-wrapper{
+    min-height:80%;
+}
+.header, section{
+    margin-bottom: 10rem;
+}
 .header{
     background: rgb(21,0,107);
     background: -moz-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
@@ -31,6 +60,7 @@ h1{
 }
 .navbar{
     border-bottom: 3px solid #07D3C7;
+    margin-bottom: .3rem;
 }
 .navbar::before{
     content: "";
@@ -72,7 +102,7 @@ h1{
 .intro{
     white-space: nowrap;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
 }
 .slant-r{
     border-radius: .5rem;
@@ -93,7 +123,99 @@ h1{
 .vectors{
     position: absolute;
 }
-
+.contact-bar{
+    background-color: #fff;
+    border: rgb(121, 119, 119) solid .1rem;
+    border-left: none;
+    border-right: none;
+}
+.col{
+    display: grid;
+}
+.bar-item{
+    display: inline-block;
+    border:rgb(121, 119, 119) solid .1rem;
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    margin: auto;
+    /* display: grid; */
+}
+.bar-item h6, .bar-item h6 a{
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: .8rem;
+    /* line-height: 10px; */
+    /* margin: auto ; */
+}
+.bar-item a{
+    font-weight: bold;
+    font-size: .8rem;
+    color:darkslategrey;
+    text-decoration: none;
+    line-height: 7px;
+    margin: auto;
+}
+.heading{
+    font-weight:850;
+}
+.item-title{
+    font-weight: 750;
+}
+.services-section{
+    background-color: aliceblue;
+    padding: 2rem 0rem;
+}
+.service-item{
+    background-color: #fff;
+    border-radius: 2rem;
+}
+.service-text{
+    background-color: #1E038A;
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+}
+.client-logo{
+    width: 10%;
+    height: 10%;
+    filter: grayscale(100%);
+    margin: 2rem;
+}
+footer{
+    background-color: #15006b;
+    bottom: 0;
+    color:var(--white);
+    margin-top: 5rem;
+}
+.footer-logo{
+    margin-left: -20px;
+    opacity: 0.6;
+}
+.footer-body a{
+    font-weight: 500;
+    font-size: .9rem;
+    color:var(--white);
+    text-decoration: none;
+    line-height: 2.5rem;
+    
+}
+.footer-icons i{
+    margin-right: 1rem;
+}
+.footer-contact{
+    margin-left: -5px;
+}
+.newsletter  form input,
+.newsletter  form input:hover{
+    color: var(--white);
+    font-weight: 600;
+    background-color: var(--sec_dark);
+}
+.footer-bottom{
+    background-color: var(--sec_dark);
+    /* position:absolute; */
+    bottom: 0;
+    width: 100%;
+}
 @media(max-width: 1200px){
     /*large devices (lg)*/
     }
