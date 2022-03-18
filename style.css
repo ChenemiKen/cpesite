@@ -8,6 +8,7 @@
   }
 
 /*Extralarge devices (xl) & General*/
+/* base */
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -19,6 +20,7 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 22;
     color:darkslategrey;
+    /* background-color: #e0e0e0; */
 }
 h1{
     font-family: 'Concert One', cursive; 
@@ -33,6 +35,13 @@ h2,h3,h4{
 .bg-red{
     background-color: var(--red);
 }
+.bg-blue{
+    background-color: var(--blue);
+    color: var(--white)
+}
+.rounded{
+    border-radius: 2rem !important;
+}
 .sec-colour-light{
  color: var(--sec_light) !important;
 }
@@ -42,13 +51,19 @@ h2,h3,h4{
 .text-blue{
     color:var(--blue) !important;
 }
+.text-secblue{
+    color: var(--sec_dark) !important;
+}
 .text-red{
     color: rgb(255, 1, 1) !important;
 }
 .page-wrapper{
     min-height:80%;
 }
-.header, section{
+.header{
+    margin-bottom: 5rem;
+}
+section{
     margin-bottom: 10rem;
 }
 .header{
@@ -92,6 +107,7 @@ h2,h3,h4{
     font-weight: 600;
 }
 
+/* Home page */
 .home{
     height: 33rem;
     color:#fff;
@@ -180,6 +196,61 @@ h2,h3,h4{
     filter: grayscale(100%);
     margin: 2rem;
 }
+
+/* about page */
+.about p{
+    text-align: justify;
+}
+.about img{
+    float: right;
+    margin: 0 0 1rem 2rem;
+}
+.neumorphic-pressed {
+    box-shadow: inset 7px 7px 10px 0 rgba(0, 0, 0, 0.2),
+      inset -7px -7px 10px 0 rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    padding: 3rem 1.3rem;
+    margin: 2rem auto;
+}
+.resume ul{
+    list-style-type: none;
+}
+.team-members{
+    margin-top: 2.5rem;
+}
+.member{
+    /* box-shadow: -20px 20px 0px #07D3C7; */
+    padding: 1.2rem auto;
+    position: relative;
+    
+}
+.member-div{
+    position: relative;
+    border-radius: 2rem;
+    background-color: #fff;
+    margin-left: .3rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    padding-top: 1px;
+}
+.shadow{
+    width:40%;
+    height:50%;
+    border-radius: 1rem;
+    background-color: #07D3C7;
+    opacity: 0.7;
+    position:absolute;
+    bottom: 0;
+    left:0;
+}
+.member-image{
+    background-color: #e0e0e0;
+    width: 40%;
+    height: 8rem;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
 footer{
     background-color: #15006b;
     bottom: 0;
@@ -195,8 +266,7 @@ footer{
     font-size: .9rem;
     color:var(--white);
     text-decoration: none;
-    line-height: 2.5rem;
-    
+    line-height: 2.5rem;   
 }
 .footer-icons i{
     margin-right: 1rem;
@@ -216,12 +286,17 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+
 @media(max-width: 1200px){
     /*large devices (lg)*/
     }
     
     @media(max-width: 992px){
     /*medium devices (md)*/
+        footer{
+            text-align: justify;
+        }
     }
     
     @media(max-width: 768px){
