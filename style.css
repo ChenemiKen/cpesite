@@ -13,18 +13,19 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     height: 100%;
-
     /* font-family: 'Nunito Sans', sans-serif; */
 }
 body{
     font-family: 'Nunito', sans-serif;
     font-size: 22;
     color:darkslategrey;
-    /* background-color: #e0e0e0; */
+    background-color: #e0e0e0;
 }
 h1{
-    font-family: 'Concert One', cursive; 
     font-size: 4rem;
+}
+.typewriter{
+    font-family: 'Concert One', cursive; 
 }
 h2,h3,h4{
     font-family: 'Nunito Sans', sans-serif;
@@ -62,16 +63,14 @@ h2,h3,h4{
 }
 .header{
     margin-bottom: 5rem;
-}
-section{
-    margin-bottom: 10rem;
-}
-.header{
     background: rgb(21,0,107);
     background: -moz-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
     background: -webkit-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
     background: linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#15006b",endColorstr="#00d4ff",GradientType=1);
+}
+section{
+    margin-bottom: 10rem;
 }
 .navbar{
     border-bottom: 3px solid #07D3C7;
@@ -163,7 +162,7 @@ section{
     /* opacity: .4; */
 } 
 .contact-bar{
-    background-color: #fff;
+    background-color:#e0e0e0;
     border: rgb(121, 119, 119) solid .1rem;
     border-left: none;
     border-right: none;
@@ -221,6 +220,10 @@ section{
 .service-img{
     height:100%;
     width:100%;
+}
+.why-img{
+    transform: scaleX(-1);
+    margin-bottom: 5rem;
 }
 .client-logo{
     width: 10%;
@@ -283,6 +286,48 @@ section{
     border-radius: 10px;
 }
 
+/* Contact us page */
+.hero-wrapper{
+    position: relative;
+    background-image: url(images/luca-bravo-bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: 60vh;
+}
+.hero{
+    z-index: 2;
+    position: relative;
+    color: var(--white);
+    display: grid;
+    height: 100%;
+}
+.hero-content{
+    margin: auto;
+}
+.hero-content a{
+    text-decoration: none;
+    margin: 2rem;
+    color:var(--white);
+    font-weight: bold;
+}
+.contact-icon{
+    padding: 1.5rem;
+    border: 2px solid #faf0e6;
+    border-radius: 50%;
+    /* color: var(--white);  */
+    margin-bottom: 2rem;
+}
+.boder-blue{
+    border-color: var(--blue);
+}
+.hero-overlay {
+    background-color: var(--blue);
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    height: 60vh;
+    width: 100%;
+}
 footer{
     background-color: #15006b;
     bottom: 0;
