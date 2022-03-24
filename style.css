@@ -24,9 +24,6 @@ body{
 h1{
     font-size: 4rem;
 }
-.typewriter{
-    font-family: 'Concert One', cursive; 
-}
 h2,h3,h4{
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -90,7 +87,7 @@ section{
 .navbar-brand{
     background-color: #15006b;
     padding: .3rem .7rem;
-    margin-left: 5rem !important;
+    margin-left: 3vw !important;
     margin-bottom: -1rem;
     z-index: 10;
 }
@@ -121,6 +118,13 @@ section{
     white-space: nowrap;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
+    text-shadow: 1px 1px 30px #15006b,
+                1px 1px 5px #15006b,
+                -1px -1px 30px #15006b,
+                -1px -1px 5px #15006b;
+}
+.typewriter{
+    font-family: 'Concert One', cursive; 
 }
 .slant-r{
     border-radius: .5rem;
@@ -328,6 +332,14 @@ section{
     height: 60vh;
     width: 100%;
 }
+.contact-form{
+    border: 1px solid var(--blue);
+    padding: 2rem;
+    border-radius: 10px;
+}
+.contact-form .form-control{
+    background-color: #eff5f5;
+}
 footer{
     background-color: #15006b;
     bottom: 0;
@@ -367,19 +379,32 @@ footer{
 
 @media(max-width: 1200px){
     /*large devices (lg)*/
-    }
+}
     
-    @media(max-width: 992px){
-    /*medium devices (md)*/
-        footer{
-            text-align: justify;
-        }
+@media(max-width: 992px){
+/*medium devices (md)*/
+    .navbar-collapse{
+        text-align: right;
+        margin-right: 5%;
     }
+    footer{
+        text-align: justify;
+    }
+}
     
     @media(max-width: 768px){
     /*small devices (sm)*/
     }
     
-    @media(max-width: 567px){
+@media(max-width: 567px){
+/*extrasmall devices (xs)*/
+    .intro{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 370px){
     /*extrasmall devices (xs)*/
+        .intro{
+            font-size: .9rem;
+        }
     }
