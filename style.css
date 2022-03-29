@@ -447,6 +447,9 @@ footer{
     .client-logo{
         margin: 3rem 1rem; 
     }
+    .fs-6{
+        font-size: 1rem !important;
+    }
 
 }
     
@@ -468,6 +471,9 @@ footer{
     }
     .client-logo{
         margin: 3rem .7rem; 
+    }
+    .fs-6{
+        font-size: .7rem !important;
     }
 }
 @media(max-width: 370px){
