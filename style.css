@@ -8,7 +8,9 @@
   }
 
 /*Extralarge devices (xl) & General*/
-/* base */
+/* ------------------------- */
+/*---------- base -----------*/
+/* ------------------------- */
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -64,7 +66,7 @@ h2,h3,h4{
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#15006b",endColorstr="#00d4ff",GradientType=1);
 }
 section{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 .navbar{
     border-bottom: 3px solid #07D3C7;
@@ -101,7 +103,9 @@ section{
     font-weight: 600;
 }
 
-/* Home page */
+/*--------------------------*/
+/*------- Home page --------*/
+/*--------------------------*/
 .home{
     height: 33rem;
     color:#fff;
@@ -143,23 +147,16 @@ section{
     position: relative;
 }
 .home-right{
-    /* margin: auto .3rem 3rem 0; */
     position: absolute;
-    /* height: 100%; */
     bottom: 3rem;
-    right: 1rem;
-    /* background-color: #F01F1F; */
-    /* overflow:hidden; */
-    
+    right: 1rem; 
 }
 .outer{
     padding: .6rem;
-    /* min-height:100%; */
 }
 .inner{
     border-radius: 15rem 0 10rem 0;
     overflow:hidden;
-    /* height:100%; */
 }
 .inner-img{
     height: 100%;
@@ -257,11 +254,48 @@ section{
     filter: grayscale(100%);
     margin: 3rem 2rem;
     flex: 1 1 0;
-    min-width: 0;
-    
+    min-width: 0;  
+}
+/*-------- footer section -------*/
+footer{
+    background-color: #15006b;
+    bottom: 0;
+    color:var(--white);
+    margin-top: 5rem;
+}
+.footer-logo{
+    margin-left: -20px;
+    opacity: 0.6;
+}
+.footer-body a{
+    font-weight: 500;
+    font-size: .9rem;
+    color:var(--white);
+    text-decoration: none;
+    line-height: 2.5rem;   
+}
+.footer-icons i{
+    margin-right: 1rem;
+}
+.footer-contact{
+    margin-left: -5px;
+}
+.newsletter  form input,
+.newsletter  form input:hover{
+    color: var(--white);
+    font-weight: 600;
+    background-color: var(--sec_dark);
+}
+.footer-bottom{
+    background-color: var(--sec_dark);
+    /* position:absolute; */
+    bottom: 0;
+    width: 100%;
 }
 
-/* about page */
+/* -----------------------*/
+/* ----- about page ------*/
+/* -----------------------*/
 .about p{
     text-align: justify;
 }
@@ -283,10 +317,14 @@ section{
     margin-top: 2.5rem;
 }
 .member{
-    /* box-shadow: -20px 20px 0px #07D3C7; */
     padding: 1.2rem auto;
     position: relative;
-    
+}
+.member:hover .member-div
+
+{
+    box-shadow: 3px 3px 6px 6px rgb(179, 183, 224);
+    transform: scale(1.01);
 }
 .member-div{
     position: relative;
@@ -365,41 +403,8 @@ section{
 .contact-form .form-control{
     background-color: #eff5f5;
 }
-footer{
-    background-color: #15006b;
-    bottom: 0;
-    color:var(--white);
-    margin-top: 5rem;
-}
-.footer-logo{
-    margin-left: -20px;
-    opacity: 0.6;
-}
-.footer-body a{
-    font-weight: 500;
-    font-size: .9rem;
-    color:var(--white);
-    text-decoration: none;
-    line-height: 2.5rem;   
-}
-.footer-icons i{
-    margin-right: 1rem;
-}
-.footer-contact{
-    margin-left: -5px;
-}
-.newsletter  form input,
-.newsletter  form input:hover{
-    color: var(--white);
-    font-weight: 600;
-    background-color: var(--sec_dark);
-}
-.footer-bottom{
-    background-color: var(--sec_dark);
-    /* position:absolute; */
-    bottom: 0;
-    width: 100%;
-}
+
+
 
 
 @media(max-width: 1200px){
@@ -451,6 +456,16 @@ footer{
         font-size: 1rem !important;
     }
 
+    /* -------------------------- */
+    /*-------- About page --------*/
+    /* -------------------------- */
+    .about img{
+        width: 50%;
+    }
+    .row-img{
+        width: 60%;
+    }
+
 }
     
 @media(max-width: 567px){
@@ -472,9 +487,25 @@ footer{
     .client-logo{
         margin: 3rem .7rem; 
     }
+    /* ---- footer bottom -----*/
     .fs-6{
-        font-size: .7rem !important;
+        font-size: .9rem !important;
     }
+
+    /* -------------------------- */
+    /*-------- About page --------*/
+    /* -------------------------- */
+    .about{
+        margin: auto 1.2rem;
+    }
+    .about img{
+        width: 100%;
+    }
+    .resume{
+        margin: auto 1rem;
+    }
+
+    
 }
 @media(max-width: 370px){
     /*mini devices (xs)*/
