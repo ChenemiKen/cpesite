@@ -352,8 +352,9 @@ footer{
     margin: 0 auto;
     border-radius: 10px;
 }
-
-/* Contact us page */
+/* ------------------------------ */
+/*------- Contact us page --------*/
+/* ------------------------------ */
 .hero-wrapper{
     position: relative;
     background-image: url(images/luca-bravo-bg.jpg);
@@ -365,11 +366,12 @@ footer{
     z-index: 2;
     position: relative;
     color: var(--white);
-    display: grid;
+    display: flex;
     height: 100%;
 }
 .hero-content{
     margin: auto;
+    min-width: 0;
 }
 .hero-content a{
     text-decoration: none;
@@ -377,11 +379,16 @@ footer{
     color:var(--white);
     font-weight: bold;
 }
+.d-flex{
+    display: flex;
+}
+.d-flex *{
+    min-width: 0;
+}
 .contact-icon{
     padding: 1.5rem;
     border: 2px solid #faf0e6;
     border-radius: 50%;
-    /* color: var(--white);  */
     margin-bottom: 2rem;
 }
 .boder-blue{
@@ -503,6 +510,28 @@ footer{
     }
     .resume{
         margin: auto 1rem;
+    }
+
+    /* ------------------------------ */
+    /*------- Contact us page --------*/
+    /* ------------------------------ */
+
+    .hero-content h1{
+        font-size: 3rem;
+    }
+    .hero-content a{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .fa-3x{
+        font-size: 2rem;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
+    .contact-icon{
+        padding: .8rem;
+        margin-bottom: 1rem;
     }
 
     
