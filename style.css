@@ -206,6 +206,32 @@ section{
 .heading{
     font-weight:850;
 }
+.welcome{
+    background: rgb(21,0,107);
+    border-radius: 1rem;
+    color: var(--white);
+    font-weight: 800;
+    padding: 1rem;
+    margin-bottom: 2rem;
+} 
+.welcome h3{
+    line-height: 2.5rem;
+}
+.name{
+    font-weight: 500;
+    letter-spacing: .48rem; 
+}
+.compuperfect{
+    font-weight: 900;
+    letter-spacing:initial;
+}
+.welcome-img{
+    padding: .5rem;
+    border: 2px dashed var(--sec_dark);
+    border-radius: 40%;
+    width: 100%;
+    height:100%;
+}
 .item-title{
     font-weight: 750;
 }
@@ -487,6 +513,10 @@ footer{
         height: 140%;
         width: 140%;
     }
+    .welcome-section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .client-logo-wrapper{
         padding: .8rem;
     }
@@ -537,13 +567,16 @@ footer{
 }
 @media(max-width: 370px){
     /*mini devices (xs)*/
-        .intro{
-            font-size: .9rem;
-        }
-        .client-logo-wrapper{
-            padding: .3rem;
-        }
-        .client-logo{
-            margin: 3rem .5rem; 
-        }
+    .intro{
+        font-size: .9rem;
     }
+    .client-logo-wrapper{
+        padding: .3rem;
+    }
+    .client-logo{
+        margin: 3rem .5rem; 
+    }
+    .name{
+        letter-spacing: .2rem; 
+    }
+}
