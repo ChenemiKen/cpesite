@@ -412,8 +412,6 @@ footer{
 }
 
 
-
-
 @media(max-width: 1200px){
     /*large devices (lg)*/
 }
@@ -471,6 +469,7 @@ footer{
     }
     .row-img{
         width: 60%;
+        height:60%;
     }
 
 }
