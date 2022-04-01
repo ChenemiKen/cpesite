@@ -182,6 +182,7 @@ section{
 }
 .bar-col{
     display: grid;
+    min-width: 0;
 }
 .bar-item{
     display: inline-block;
@@ -189,6 +190,11 @@ section{
     border-radius: .5rem;
     padding: .2rem 1rem;
     margin: auto;
+    min-width: 0;
+}
+.bar-extras-wrapper{
+    display: flex !important;
+    justify-content: space-between;
 }
 .bar-item h6, .bar-item h6 a{
     margin-bottom: 0;
@@ -299,6 +305,9 @@ footer{
     color:var(--white);
     text-decoration: none;
     line-height: 2.5rem;   
+}
+.footer-email{
+    font-size: initial !important;
 }
 .footer-icons i{
     margin-right: 1rem;
@@ -435,6 +444,10 @@ footer{
 }
 .contact-form .form-control{
     background-color: #eff5f5;
+}
+#location-div a{
+    text-decoration: none;
+    color: darkslategray;
 }
 
 
