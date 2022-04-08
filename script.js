@@ -49,6 +49,7 @@ var TxtRotate = function(el, toRotate, period) {
         new TxtRotate(elements[i], JSON.parse(toRotate), period);
       }
     }
+    // to give a cursor
     // // INJECT CSS
     // var css = document.createElement("style");
     // css.type = "text/css";
