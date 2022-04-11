@@ -94,8 +94,8 @@ section{
     background-color: #fff;
 }
 .logo-bg img{
-    margin-top: -.2rem;
-    margin-bottom: -.2rem;
+    /* margin-top: -.2rem; */
+    /* margin-bottom: -.2rem; */
     width: 110px;
 }
 .nav-link{
@@ -274,6 +274,7 @@ section{
 .why-img{
     transform: scaleX(-1);
     margin-bottom: 5rem;
+    height:100%;
 }
 .client-logo-wrapper{
     display: flex;
