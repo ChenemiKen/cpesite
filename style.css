@@ -2,10 +2,12 @@
 :root {
     --blue: #1E038A;
     --white: #faf0e6;
-    --sec_light: #07D3C7;
-    --sec_dark: #13B1D8;
+    /* --sec_light: #07D3C7; */
+    --sec_light: #e078d9;
+    /* --sec_dark: #13B1D8; */
+    --sec_dark: #970397;
     --red: #F01F1F;
-  }
+}
 
 /*Extralarge devices (xl) & General*/
 /* ------------------------- */
