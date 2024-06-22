@@ -1,9 +1,11 @@
 /*DESKTOP FIRST*/
 :root {
+    --text: #161119;
     --blue: #1E038A;
+    --prim_dark: #2d013b;
     --white: #faf0e6;
     /* --sec_light: #07D3C7; */
-    --sec_light: #e078d9;
+    --sec_light: #f9f5f8;
     /* --sec_dark: #13B1D8; */
     --sec_dark: #970397;
     --red: #F01F1F;
@@ -22,7 +24,7 @@ html, body {
 body{
     font-family: 'Nunito', sans-serif;
     font-size: 22;
-    color:darkslategrey;
+    color:var(--text);
     background-color: #e0e0e0;
 }
 h1{
@@ -37,6 +39,9 @@ h2,h3,h4{
 .bg-red{
     background-color: var(--red);
 }
+.bg-sec-dark{
+    background-color: var(--sec_dark);
+}
 .bg-blue{
     background-color: var(--blue);
     color: var(--white)
@@ -44,7 +49,7 @@ h2,h3,h4{
 .text-blue{
     color:var(--blue) !important;
 }
-.text-secblue-light{
+.text-sec-light{
     color: var(--sec_light) !important
 }
 .text-secblue-dark{
@@ -61,22 +66,31 @@ h2,h3,h4{
 }
 .header{
     margin-bottom: 5rem;
+    background: rgb(45, 1, 59);
+    background: -moz-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(130deg, #2d013b 0%, #2d013b 25%, #e078d9 100%, #e078d9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#15006b",endColorstr="#00d4ff",GradientType=1);
+}
+/* .header{
+    margin-bottom: 5rem;
     background: rgb(21,0,107);
     background: -moz-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
     background: -webkit-linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
     background: linear-gradient(130deg, rgba(21,0,107,1) 0%, rgba(21,0,107,1) 25%, rgba(1,201,248,1) 100%, rgba(0,212,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#15006b",endColorstr="#00d4ff",GradientType=1);
-}
+} */
 section{
     margin-bottom: 5rem;
 }
 .navbar{
-    border-bottom: 3px solid #07D3C7;
+    /* border-bottom: 3px solid #07D3C7; */
+    /* border-bottom: 3px solid var(--blue); */
     margin-bottom: .3rem;
 }
 .navbar::before{
     content: "";
-    border-bottom: 3px solid #fff;
+    /* border-bottom: 3px solid var(--sec_light); */
     content: "";
     display: block;
     position: absolute;
@@ -86,19 +100,23 @@ section{
     pointer-events: none;
 }
 .navbar-brand{
-    background-color: #15006b;
-    padding: .3rem .7rem;
+    /* background-color: #15006b; */
+    background-color: var(--prim_dark);
+    padding: .3rem .4rem;
     margin-left: 3vw !important;
     margin-bottom: -1rem;
     z-index: 10;
 }
 .logo-bg{
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .logo-bg img{
     /* margin-top: -.2rem; */
     /* margin-bottom: -.2rem; */
-    width: 110px;
+    width: 100px;
+}
+.nav-item{
+    padding-left: 1rem;
 }
 .nav-link{
     color: #fff !important;
@@ -122,17 +140,21 @@ section{
     white-space: nowrap;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
-    text-shadow: 1px 1px 30px #15006b,
+    text-shadow: 1px 1px 30px var(--prim_dark),
+                1px 1px 5px var(--prim_dark),
+                -1px -1px 30px var(--prim_dark),
+                -1px -1px 5px var(--prim_dark);
+    /* text-shadow: 1px 1px 30px #15006b,
                 1px 1px 5px #15006b,
                 -1px -1px 30px #15006b,
-                -1px -1px 5px #15006b;
+                -1px -1px 5px #15006b; */
 }
 .typewriter{
     font-family: 'Concert One', cursive; 
-    text-shadow: 1px 1px 30px #15006b,
-                1px 1px 5px #15006b,
-                -1px -1px 30px #15006b,
-                -1px -1px 5px #15006b;
+    text-shadow: 1px 1px 30px var(--prim_dark),
+                1px 1px 5px var(--prim_dark),
+                -1px -1px 30px var(--prim_dark),
+                -1px -1px 5px var(--prim_dark);
 }
 .slant-r{
     border-radius: .5rem;
@@ -188,7 +210,7 @@ section{
 }
 .bar-item{
     display: inline-block;
-    border:rgb(121, 119, 119) solid .1rem;
+    border: var(--text) solid .1rem;
     border-radius: .5rem;
     padding: .2rem 1rem;
     margin: auto;
@@ -206,7 +228,7 @@ section{
 .bar-item a{
     font-weight: bold;
     font-size: .8rem;
-    color:darkslategrey;
+    color:var(--text);
     text-decoration: none;
     line-height: 7px;
     margin: auto;
@@ -227,7 +249,7 @@ section{
 }
 .name{
     font-weight: 500;
-    letter-spacing: .48rem; 
+    letter-spacing: .38rem; 
 }
 .compuperfect{
     font-weight: 900;
