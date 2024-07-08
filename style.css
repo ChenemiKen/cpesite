@@ -159,10 +159,10 @@ section{
     white-space: nowrap;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
-    text-shadow: 1px 1px 3px var(--blue),
-                1px 1px 1px var(--blue),
-                -1px -1px 3px var(--blue),
-                -1px -1px 1px var(--blue);
+    /* text-shadow: 1px 1px 1px var(--prim),
+                1px 1px 1px var(--prim),
+                -1px -1px 1px var(--prim),
+                -1px -1px 1px var(--prim); */
     /* text-shadow: 1px 1px 30px #15006b,
                 1px 1px 5px #15006b,
                 -1px -1px 30px #15006b,
@@ -170,10 +170,10 @@ section{
 }
 .typewriter{
     font-family: 'Concert One', cursive; 
-    text-shadow: 1px 1px 3px var(--blue),
-                1px 1px 1px var(--blue),
-                -1px -1px 3px var(--blue),
-                -1px -1px 1px var(--blue);
+    /* text-shadow: 1px 1px 1px var(--prim),
+                1px 1px 1px var(--prim),
+                -1px -1px 1px var(--prim),
+                -1px -1px 1px var(--prim); */
 }
 .slant-r{
     border-radius: .5rem;
